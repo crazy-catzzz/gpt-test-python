@@ -1,5 +1,8 @@
-install-reqs:
-	pip install -r requirements.txt
+REQUIREMENTS	:= requirements.txt
+APP_DIR			:= ./src/gpt-test/gpt-test.py
 
-install:
-	pip install .
+install-reqs:
+	pip install -r $(REQUIREMENTS)
+
+run:
+	python -m flask --app $(APP_DIR)
