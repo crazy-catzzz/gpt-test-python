@@ -1,1 +1,0 @@
-gpt_api_key = "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"
